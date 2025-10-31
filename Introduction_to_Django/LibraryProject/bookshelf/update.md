@@ -1,13 +1,6 @@
-
----
-
-### **`update.md`**
-```markdown
-### UPDATE Operation
-
-**Command:**
-```python
-book = Book.objects.get(title="1984")
-book.title = "Nineteen Eighty-Four"
-book.save()
-print(book)
+>>> book = Book.objects.get(title="1984")
+>>> book.title = "Nineteen Eighty-Four"
+>>> book.save()
+>>> book
+<Book: Nineteen Eighty-Four by George Orwell (1949)>
+# Successfully updated the book title
